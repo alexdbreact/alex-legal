@@ -15,7 +15,7 @@ export default function DataTables() {
     const getmains = async () => {
       try {
         const res = await fetch("/api/mains", {
-          cache: "no-store",
+          cache: "no-cache",
         });
         if (!res.ok) {
           throw new Error("Failed to fetch");
